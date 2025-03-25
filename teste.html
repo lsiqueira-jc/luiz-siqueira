@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luiz Siqueira | Palestrante e Especialista em Tecnologia</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        color: #333;
+        background-color: #f9f9f9;
+      }
+      header {
+        background-color: #000;
+        color: #fff;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+      }
+      .menu-toggle {
+        display: none;
+        font-size: 2rem;
+        cursor: pointer;
+      }
+      nav {
+        display: flex;
+      }
+      nav a {
+        color: #fff;
+        margin-left: 1.5rem;
+        text-decoration: none;
+      }
+      .hero {
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+      .hero h2,
+      .hero p,
+      .hero button {
+        z-index: 1;
+      }
+      .hero button {
+        padding: 0.7rem 1.5rem;
+        font-size: 1rem;
+        background: #ff6600;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .section {
+        padding: 4rem 2rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .contact-btn {
+        text-decoration: none;
+        color: white;
+      }
+      @media (max-width: 768px) {
+        .menu-toggle {
+          display: block;
+        }
+        nav {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          left: 0;
+          width: 100%;
+          background-color: #000;
+        }
+        nav.active {
+          display: flex;
+        }
+        nav a {
+          margin: 1rem;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Luiz Siqueira</h1>
+      <div class="menu-toggle">&#9776;</div>
+      <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#palestras">Palestras</a>
+        <a href="#feed">Feed</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <video autoplay loop muted>
+        <source src="luiz.mov" type="video/mp4" />
+        Seu navegador não suporta o elemento de vídeo.
+      </video>
+      <h2>Transformando Tecnologia em Valor</h2>
+      <p>Palestras, Conteúdo e Inovação para o seu negócio</p>
+      <button onclick="location.href='#contato'">Entre em contato</button>
+    </section>
+
+    <section class="section" id="sobre">
+      <h2>Sobre Luiz Siqueira</h2>
+      <div class="about">
+        <img src="profile-placeholder.jpg" alt="Luiz Siqueira" />
+        <p>
+          Especialista em Tecnologia, Gestão e Negócios, Luiz Siqueira atua como
+          palestrante, head de tecnologia e criador de conteúdo, ajudando
+          empresas e profissionais a potencializar resultados através da
+          inovação e estratégia digital.
+        </p>
+      </div>
+    </section>
+
+    <section class="section" id="palestras">
+      <h2>Palestras</h2>
+      <div class="palestras">
+        <div class="card">
+          <img src="palestra1-placeholder.jpg" alt="Palestra 1" />
+          <h3>O Futuro das Profissões com IA</h3>
+          <p>
+            Entenda como a Inteligência Artificial está transformando carreiras
+            e como se adaptar para o futuro.
+          </p>
+        </div>
+        <div class="card">
+          <img src="palestra2-placeholder.jpg" alt="Palestra 2" />
+          <h3>Gestão Ágil e Tecnologia</h3>
+          <p>
+            Como aplicar metodologias ágeis e tecnologia para acelerar
+            resultados nos negócios.
+          </p>
+        </div>
+        <div class="card">
+          <img src="palestra3-placeholder.jpg" alt="Palestra 3" />
+          <h3>Tecnologia como Pilar de Valor</h3>
+          <p>
+            Descubra como usar tecnologia para gerar vantagem competitiva e
+            eficiência.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="feed">
+      <h2>Notícias & Artigos</h2>
+      <div class="feed">
+        <div class="card">
+          <img src="article1-placeholder.jpg" alt="Artigo 1" />
+          <h3>Como o ChatGPT está mudando o mercado</h3>
+        </div>
+        <div class="card">
+          <img src="article2-placeholder.jpg" alt="Artigo 2" />
+          <h3>Tendências de Tecnologia para 2025</h3>
+        </div>
+        <div class="card">
+          <img src="article3-placeholder.jpg" alt="Artigo 3" />
+          <h3>Gestão e Inovação em tempos digitais</h3>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contato">
+      <h2>Entre em Contato</h2>
+      <form>
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu email" required />
+        <textarea rows="4" placeholder="Sua mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <script>
+      document
+        .querySelector(".menu-toggle")
+        .addEventListener("click", function () {
+          document.querySelector("nav").classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
