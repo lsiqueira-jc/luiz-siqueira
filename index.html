@@ -169,7 +169,60 @@
         padding: 1rem;
         margin-top: 2rem;
       }
+      .social-links {
+        display: flex;
+        justify-content: left;
+        gap: 1rem;
+        margin-top: 1rem;
+      }
+      .social-links a img {
+        width: 32px;
+        height: 32px;
+        transition: transform 0.3s;
+      }
+      .social-links a img:hover {
+        transform: scale(1.1);
+      }
     </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Luiz Siqueira",
+        "description": "Engenheiro de Software Especialista em Soluções para Publish, palestrante e criador de conteúdo.",
+        "jobTitle": "Engenheiro de Software",
+        "url": "https://luizsiqueira.com.br",
+        "sameAs": [
+          "https://www.linkedin.com/in/luizs",
+          "https://www.instagram.com/luizsiqueira.s",
+          "https://github.com/lsiqueira-jc"
+        ],
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Sistema Jornal do Commercio de Comunicação (SJCC)"
+        },
+        "hasPart": [
+          {
+            "@type": "CreativeWork",
+            "name": "Dominando a tecnologia para sites de conteúdo",
+            "description": "Explorando como a tecnologia pode ser a chave para transformar sites de conteúdo, impulsionando resultados significativos.",
+            "image": "https://luizsiqueira.com.br/godigital1.jpg"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Automatizações com IA",
+            "description": "Como podemos usar agentes de IA para automatizar processos.",
+            "image": "https://luizsiqueira.com.br/falanorte.jpg"
+          },
+          {
+            "@type": "CreativeWork",
+            "name": "Carreira tech: o caminho desde o primeiro emprego até a liderança",
+            "description": "História de carreira com todos os desafios e oportunidades.",
+            "image": "https://luizsiqueira.com.br/phpeste.jpg"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <header>
@@ -184,7 +237,7 @@
 
     <section class="hero">
       <video autoplay loop muted>
-        <source src="luizsiqueira.mp4" type="video/mp4" />
+        <source src="luiz.mov" type="video/mp4" />
         Seu navegador não suporta o elemento de vídeo.
       </video>
       <h2>Transformando Tecnologia em Valor</h2>
@@ -194,6 +247,17 @@
 
     <section class="section" id="sobre">
       <h2>Sobre Luiz Siqueira</h2>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/luizs" target="_blank">
+          <img src="linkedin-icon.png" alt="LinkedIn" />
+        </a>
+        <a href="https://www.instagram.com/luizsiqueira.s" target="_blank">
+          <img src="instagram-icon.png" alt="Instagram" />
+        </a>
+        <a href="https://github.com/lsiqueira-jc" target="_blank">
+          <img src="github-icon.png" alt="GitHub" />
+        </a>
+      </div>
       <div class="about">
         <p>
           <b>Engenheiro de Software Especialista em Soluções para Publish</b>
@@ -229,10 +293,11 @@
           ferramentas utilizados para impulsionar a audiência dos produtos da
           empresa.
         </p>
+        <h3>Marcos</h3>
         <ul>
           <li>
-            2021 – Iniciamos o processo de formação do time de desenvolvimento
-            implementando uma cultura de inovação e colaboração.
+            2021 – Iniciamos um processo de cultura formando um time motivado
+            inovador e focado em resultados.
           </li>
           <li>
             2022 – As tecnologias desenvolvidas pelo nosso time ajudaram o SJCC
@@ -243,19 +308,18 @@
             reconhecimento pelo impacto das soluções implementadas.
           </li>
           <li>
-            2024 – Construímos o site ReceitaDaBoa.com.br, que em pouco tempo se
-            tornou o quinto site de receitas mais acessado do país, segundo
-            dados da Comscore.
+            2024 – Construímos o site receitadaboa.com.br, que em pouco tempo
+            ficou no top 10 dos sites de receitas mais acessado do país, segundo
+            dados da comscore.
           </li>
           <li>
-            2024 – Liderei o processo de integração dos APPs e sites dos
-            Shoppings Riomar no publicador de conteúdo do SJCC, ajudando no
-            fechamento de parceria de projetos entre empresas do mesmo grupo.
+            2024 – Liderei a integração dos sites e Apps do Shoppings Riomar com
+            as ferramentas de publicação de conteudos do SJCC, ajudando no
+            fechamento de uma parceria entre empresas do mesmo Grupo.
           </li>
           <li>
-            2025 – Implantamos soluções de IA que automatizaram tarefas,
-            aumentaram a assertividade nas operações e otimizaram a
-            produtividade da empresa.
+            2025 – Desenvolvemos soluções com agentes de IA para automatizar
+            processos que aumentaram a produtividade.
           </li>
         </ul>
         <p>
@@ -300,6 +364,26 @@
             Carreira tech: o caminho desde o primeiro emprego até a lideraça
           </h3>
           <p>Historia de carreira com todos os desafios e oportrunidades.</p>
+        </div>
+        <div class="card">
+          <img src="produto.jpg" alt="Produto" />
+          <h3>
+            Desenvolvimento , UX e processos de desenvolvimento de produtos
+          </h3>
+          <p>Como essa areas trabalham juntas para confecção de um produto</p>
+        </div>
+        <div class="card">
+          <img src="lideranca.jpeg" alt="Liderança" />
+          <h3>Segredo dos Devs de alta performance</h3>
+          <p>
+            jornada de construção de um time de desenvolvimento de software de
+            alta performance. Através de uma abordagem focada na criação de uma
+            cultura sólida, implementação de processos eficientes e entrega
+            contínua de valor, apresentaremos as estratégias e práticas que
+            resultaram em grandes resultados. Esta palestra é ideal para líderes
+            e profissionais que buscam transformar suas equipes e alcançar novos
+            patamares.
+          </p>
         </div>
       </div>
     </section>
