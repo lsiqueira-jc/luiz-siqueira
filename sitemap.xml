@@ -39,24 +39,4 @@
     <changefreq>never</changefreq>
     <priority>0.5</priority>
   </url>
-
-  <!-- Artigos do Feed -->
-  <url>
-    <loc>https://jc.uol.com.br/tecnologia/2024/05/07/o-fim-dos-cookies-de-terceiros-um-novo-cenario-para-a-publicidade-digital.html</loc>
-    <lastmod>2024-05-07</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://www.linkedin.com/pulse/s%C3%B3-conte%C3%BAdo-n%C3%A3o-basta-o-seo-t%C3%A9cnico-faz-toda-luiz-siqueira-fercf</loc>
-    <lastmod>2024-05-01</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.6</priority>
-  </url>
-  <url>
-    <loc>https://ne10.uol.com.br/noticias/tecnologia/2023/04/15435246-programador-5-dicas-para-o-conquistar-o-primeiro-emprego.html</loc>
-    <lastmod>2023-04-15</lastmod>
-    <changefreq>never</changefreq>
-    <priority>0.6</priority>
-  </url>
 </urlset>
